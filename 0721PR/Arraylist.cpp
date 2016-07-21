@@ -17,14 +17,14 @@ void Arraylist::pushBack(void * data)
 {
 	if (isOverflow())
 	{
-		arr[size] = data;
-		cout << "저장되었습니다." << endl;
-		size++;
+		cout << "저장공간 초과! [최대값] " << max << " : " << size << " [현재크기]" << endl;
+		
 	}
 	else
 	{
-		cout << "저장공간 초과! [최대값] = " << max << " : " << size << " = [현재크기]" << endl;
-		delete data;
+		arr[size] = data;
+		cout << "저장되었습니다." << endl;
+		size++;
 	}
 }
 

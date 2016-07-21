@@ -147,10 +147,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Arraylist.cpp" />
+    <ClCompile Include="Student.cpp" />
+    <ClCompile Include="CTRL.cpp" />
     <ClCompile Include="소스.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arraylist.h" />
+    <ClInclude Include="Student.h" />
+    <ClInclude Include="CTRL.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
