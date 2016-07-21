@@ -57,6 +57,26 @@ void CTRL::Search()
 
 void CTRL::Delete()
 {
+	char name[20];
+
+	while (getchar() != '\n');
+	cout << "찾을 학생 이름 입력 : ";
+	cin.getline(name, sizeof(name));
+
+	for (int i = 0; i < slist->getSize(); i++)
+	{
+		Student *s = (Student*)slist->getData(i);
+		if (strcmp(name, s->getName().c_str()) == 0)
+		{
+			if (slist->DeleteData(i))
+			{
+				cout << i << "번째 데이터를 삭제하였습니다." << endl;
+				return;
+			}
+			
+		}	
+	}
+		cout << "해당값을 찾을 수 없습니다." << endl;
 }
 
 void CTRL::SelectAll()

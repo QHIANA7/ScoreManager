@@ -42,6 +42,7 @@ bool Arraylist::DeleteData(int idx)
 	}
 	else
 		return false;
+
 }
 
 bool Arraylist::isOverflow()
